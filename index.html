@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monster Survivors - Online Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #000000, #222222);
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1), 0 2px 4px -1px rgba(255, 255, 255, 0.06);
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .game-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      margin-bottom: 2rem;
+    }
+
+    .game-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.1), 0 4px 6px -2px rgba(255, 255, 255, 0.05);
+    }
+
+    h1 {
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
+    }
+
+    h2 {
+      color: #00ffcc;
+      margin-top: 2rem;
+    }
+
+    p,
+    ul {
+      color: #cccccc;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 -4px 6px -1px rgba(255, 255, 255, 0.1), 0 -2px 4px -1px rgba(255, 255, 255, 0.06);
+    }
+  </style>
+</head>
+
+<body class="font-sans">
+  <header class="shadow-md">
+    <div class="container mx-auto py-4 px-6 flex justify-between items-center">
+      <h1 class="text-4xl font-bold">Monster Survivors</h1>
+      <a href="#" class="text-blue-400 hover:text-blue-600">Home</a>
+    </div>
+  </header>
+
+  <main class="container mx-auto py-8 px-6">
+    <section class="mb-8">
+      <p class="text-xl text-gray-300">Embark on an epic survival journey in the world of monsters!</p>
+    </section>
+
+    <section class="mb-8">
+      <div class="game-container">
+        <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-3xl font-bold mb-4">Game Overview</h2>
+      <p class="mb-4">Monster Survivors is an exciting online game where you have to survive against hordes of monsters.
+        Explore a vast and mysterious world, upgrade your weapons, and unlock new abilities to become the ultimate
+        survivor.</p>
+
+      <h2 class="text-3xl font-bold mb-4">Game Features</h2>
+      <ul class="list-disc list-inside mb-4">
+        <li>Multiple levels with increasing difficulty</li>
+        <li>Diverse range of monsters to fight</li>
+        <li>Upgradeable weapons and equipment</li>
+        <li>Unlockable skills and abilities</li>
+      </ul>
+
+      <h2 class="text-3xl font-bold mb-4">How to Play</h2>
+      <p>Use the arrow keys to move your character and the spacebar to attack. Collect coins and power-ups to enhance
+        your performance. Good luck!</p>
+    </section>
+  </main>
+
+  <footer class="shadow-md">
+    <div class="container mx-auto py-4 px-6 text-center text-gray-400">
+      <p>&copy; 2025 thinkergame.my. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function canOpenURL(url) {
+      // This is a simple mock function. In a real scenario, you'd use more advanced techniques.
+      try {
+        const anchor = document.createElement('a');
+        anchor.href = url;
+        return anchor.protocol === 'http:' || anchor.protocol === 'https:';
+      } catch (error) {
+        return false;
+      }
+    }
+  </script>
+</body>
+
+</html>
